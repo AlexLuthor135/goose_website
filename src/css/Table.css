@@ -1,0 +1,22 @@
+.table {
+    margin-top: 8%;
+    margin-left: 3%;
+    color: #1B1464;
+    text-align: left;
+    max-width: 100%;
+}
+
+.table h1{
+    font-size: 3vw;
+}
+
+@media (max-width: 768px) {
+    .table {
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+
+    .table h1{
+        font-size: 5vw;
+    }
+}

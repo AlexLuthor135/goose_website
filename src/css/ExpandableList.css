@@ -1,0 +1,77 @@
+/* ExpandableList.css */
+.expandable-list {
+    width: 100%;
+    max-width: 30vw;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.list-item {
+    margin-bottom: 0.5vh;
+    overflow: hidden;
+}
+
+.list-title {
+    display: flex;
+    align-items: center;
+    padding: 0.5vw 1vw;
+    background-color: #C8C8C8;
+    cursor: pointer;
+    position: relative; /* To allow absolute positioning of the button */
+}
+
+.list-title h3 {
+    margin: 0;
+    font-size: 1.2vw;
+    margin-left: 2vw; /* Add space for the toggle button */
+    flex: 1; /* Allows title to take up remaining space */
+}
+
+.toggle-button {
+    border: none;
+    background: none;
+    font-size: 1.5vw;
+    cursor: pointer;
+    position: absolute; /* Position relative to the list-title */
+    left: 0; /* Align to the left edge */
+    /* Adjust vertical alignment if needed */
+}
+
+.list-content {
+    padding: 1vh;
+    background-color: #C8C8C8;
+}
+
+.list-content ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: ''; /* Default bullet style */
+    margin-left: 1vw; /* Indent list items */
+}
+
+.list-content li {
+    margin-bottom: 2vh;
+    font-weight: 600;
+    margin-left: 1vw;
+    font-size: 1vw;
+}
+
+@media (max-width: 768px) {
+    .expandable-list {
+        max-width: 90vw;
+    }
+
+    .list-title h3 {
+        font-size: 3vw;
+        margin-left: 5vw;
+    }
+
+    .toggle-button {
+        font-size: 3.5vw;
+    }
+
+    .list-content li {
+        font-size: 2vw;
+    }
+}

@@ -1,0 +1,173 @@
+
+@font-face {
+  font-family: 'Edwardian Script ITC';
+  src: url('../assets/fonts/edwardianscriptitc.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('../assets/fonts/calibri.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.about-section {
+  margin-top: 5%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.text-group {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.we {
+  font-size: 25vw;
+  font-family: 'Edwardian Script ITC';
+  color: #ffffff;
+  margin: 0;
+  margin-right: 1%;
+  margin-top: -14.2%;
+}
+
+.word-list li {
+  font-size: 1.6vw;
+  font-family: 'Calibri';
+  letter-spacing: 0.8vw;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+
+.word-list {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.innovate {
+  color: #ffffff;
+  font-family: 'Calibri';
+  font-weight: 100;
+  font-size: 14vw;
+  letter-spacing: 5.1vw;
+  margin: 0;
+  align-self: flex-start;
+  margin-top: -12%;
+  padding-top: 2%;
+  position: relative;
+  max-width: 100%;
+}
+
+.innovate::after {
+  content: "";
+  display: block;
+  width: 100.45%; /* Underline will span the full width of the text */
+  height: 1vw; /* Adjust the thickness of the underline */
+  background-color: #ffffff; /* Color of the underline */
+  position: absolute;
+  bottom: 17%; /* Adjust this to control the distance between text and underline */
+  left: 0; /* Start underline from the left edge */
+  max-width: 100%;
+}
+
+.bar-text {
+  font-size: 2vw;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: 100;
+  display: flex;
+  font-family: 'Calibri';
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  margin: 0;
+  margin-top: -3%;
+  padding: 2%;
+  max-width: 100%;
+}
+
+.about-list {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  font-size: 1.0vw;
+  list-style: none;
+  color: #1B1464;
+  text-align: left;
+  padding: 3%;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-list ul {
+  padding: 0;
+  margin: 0; 
+}
+
+.about-list li {
+  position: relative;
+  color: #ffffff;
+  margin-top: 2%;
+  width: 100%;
+}
+
+.about-list .left-side {
+  flex: 1;
+  text-align: left; 
+}
+
+.about-list .right-side {
+  flex: 1;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+
+  .we {
+    font-size: 35vw;
+    /* margin-top: -10%; */
+  }
+
+  .word-list li {
+    font-size: 4vw;
+    letter-spacing: 2vw;
+  }
+
+  .innovate {
+    font-size: 10vw;
+    letter-spacing: 7.2vw;
+    margin-top: 0%;
+  }
+
+  .innovate::after {
+    height: 2vw;
+    bottom: 10%;
+  }
+
+  .bar-text {
+    font-size: 4vw;
+    margin-top: -1.5%;
+  }
+
+  .about-list {
+    font-size: 3vw;
+    padding: 5%;
+    margin-bottom: 50%;
+  }
+
+  .about-list li {
+    margin-top: 5%;
+  }
+
+  .innovate::after {
+    height: 1.3vw;
+    bottom: 10%;
+  }
+}

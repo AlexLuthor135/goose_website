@@ -1,0 +1,13 @@
+.Reserved {
+    position: fixed; /* Keeps it fixed on the screen */
+    bottom: 0vh; /* Distance from the bottom of the viewport */
+    left: 0.3vw; /* Distance from the left side of the viewport */
+    z-index: 1000; /* Ensures it's on top of other elements */
+    opacity: 0.7; /* Slight transparency to make it less intrusive */
+  }
+  
+  .Reserved svg {
+    width: 10vw;
+    height: auto;
+    fill: #000000;
+  }

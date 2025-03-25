@@ -1,0 +1,117 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/dna_background.svg'), url('../assets/background.svg');
+  background-size: cover, cover;
+  background-position: center center, center center;
+  background-attachment: fixed, fixed;
+  z-index: -10;
+}
+
+.section-8-background {
+  background-image: url('../assets/case_image.svg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: -10;
+}
+
+.section-9-background {
+  background-image: url('../assets/contact_image.svg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: -10;
+}
+
+.about-background {
+  background-image: url('../assets/about_image.svg'), url('../assets/about_gradient.svg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: -10;
+}
+
+.section-9-background, .about-background{
+  transition: background-image 0.2s linear, background-color 0.2s linear;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: -10;
+}
+
+@media (max-width: 1366px){
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+  }
+  body {
+    background-image: url('../assets/1366/dna_background.svg'), url('../assets/1366/background.svg');
+  }
+  .section-8-background
+  {
+    background-image: url('../assets/1366/case_image.svg');
+  }
+  .section-9-background
+  {
+    background-image: url('../assets/1366/contact_image.svg');
+  }
+  .about-background
+  {
+    background-image: url('../assets/1366/about_image.svg'), url('../assets/1366/about_gradient.svg');
+  }
+}
+
+@media (max-width: 1024px) {
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+  }
+  body {
+    background-image: url('../assets/1024/dna_background.svg'), url('../assets/1024/background.svg');
+  }
+  .section-8-background
+  {
+    background-image: url('../assets/1024/case_image.svg');
+  }
+  .section-9-background
+  {
+    background-image: url('../assets/1024/contact_image.svg');
+  }
+  .about-background
+  {
+    background-image: url('../assets/1024/about_image.svg'), url('../assets/1024/about_gradient.svg');
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    width: 110vw;
+    height: 110vh;
+  }
+  body {
+    background-image: url('../assets/768/dna_background.svg'), url('../assets/768/background.svg');
+  }
+  .section-8-background
+  {
+    background-image: url('../assets/768/case_image.svg');
+  }
+  .section-9-background
+  {
+    background-image: url('../assets/768/contact_image.svg');
+  }
+  .about-background
+  {
+    background-image: url('../assets/768/about_image.svg'), url('../assets/768/about_gradient.svg');
+  }
+}

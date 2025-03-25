@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../assets/fonts/myriad-pro.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ButtonText {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  transition: inherit;
+  padding: inherit;
+  margin: inherit;
+
+  display: inherit;
+  background-color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  border-radius: inherit;
+  position: inherit;
+  border: inherit;
+  cursor: pointer;
+}
+
+.ButtonMenuText {
+  font-size: 1.5vw; /* Dynamic font size */
+  font-family: 'Myriad Pro', sans-serif;
+  color: #ffffff;
+  transition: text-decoration 0.3s ease;
+  margin-top: 0.5vh;
+  background-color: transparent;
+  border: none;
+  padding: 0.5vw;
+  margin: 0.5vh;
+  max-width: 100%;
+}
+
+.Buttons-container {
+  top: 3vh;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  z-index: 3;
+  background-image: url('../assets/button_bar.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ButtonMenuText:hover {
+  text-decoration: underline;
+}
+
+.App-logo {
+  width: 15vw; /* Adjust the size as necessary */
+  height: auto;
+  margin: 0.5vh;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .Buttons-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .ButtonText {
+    font-size: 2.0vw;
+  }
+  .ButtonMenuText {
+    padding: 0;
+  }
+}
