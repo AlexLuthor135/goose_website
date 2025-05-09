@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Reserved.css'; // Import your CSS file
+import '../css/Reserved.css';
 import reserved_logo from '../assets/logo_reserved.svg';
 import { ReactSVG } from 'react-svg';
 
